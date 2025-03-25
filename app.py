@@ -17,7 +17,7 @@ def recommed_movie(mov):
     id = data[data['original_title'] == mov].index[0]
     distance = sorted(list(enumerate(s[id])), reverse=True, key=lambda  vec: vec[1])
     mov_list = []
-    for i in distance[:5]:
+    for i in distance[1:6]:
         mov_list.append(data.iloc[i[0]].original_title)
     return mov_list
 
