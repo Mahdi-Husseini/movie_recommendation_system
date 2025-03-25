@@ -21,7 +21,7 @@ def recommed_movie(mov):
         mov_list.append(data.iloc[i[0]].original_title)
     return mov_list
 
-st.image('C:\\Users\\user\\Desktop\\movie\\msba.png')
+st.image('msba.png')
 
 st.title('Movie Recommendation System')
 
